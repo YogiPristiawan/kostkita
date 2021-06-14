@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	color: rgb(33, 37, 41);
+	font-family: "Mulish", sans-serif;
+}
+.header {
+	position: relative;
+}
+.jumbotron-bg {
+	height: 260px;
+	background-image: url(http://localhost/kostkita/asset/img/jumbotron.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px -100px;
+	filter: blur(3px);
+}
+.container {
+	width: 80%;
+	margin: auto;
+}
+.jumbotron {
+	padding: 2rem;
+	position: absolute;
+	width: 100%;
+	top: 0;
+}
+.navbar {
+	height: 60px;
+	background-color: rgb(248, 249, 250);
+	line-height: 60px;
+}
+.text-center {
+	text-align: center;
+}
+.logo {
+	width: 120px;
+}
+a {
+	text-decoration: none;
+	font-size: 1.5rem !important;
+}
+h1 {
+	font-size: 3.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.5rem;
+}
+p {
+	font-size: 1.5rem;
+}
+hr {
+	border: 0.2px solid rgba(0, 0, 0, 0.125);
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.bg-white {
+	background-color: white;
+}
+.text-white {
+	color: white;
+}
+.text-danger {
+	color: red;
+}
+.text-success {
+	color: rgb(40, 167, 69);
+}
+.card {
+	width: 287.986px;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 0 !important;
+}
+.card img {
+	width: 100%;
+}
+.card-body {
+	padding: 2rem 1rem 2rem 1rem;
+}
+.card-body p {
+	font-size: 1.2rem;
+	margin-bottom: 1.5rem;
+}
+.pt-1 {
+	padding-top: 1rem;
+}
+.pr-2 {
+	padding-right: 2.5rem;
+}
+.px-2 {
+	padding-right: 2.5rem;
+	padding-left: 2.5rem;
+}
+.py-2 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.mt-1 {
+	margin-top: 1rem;
+}
+.mt-2 {
+	margin-top: 2.5rem;
+}
+.mt-3 {
+	margin-top: 5rem !important;
+}
+.mt-4 {
+	margin-top: 6rem !important;
+}
+.ml-2 {
+	margin-left: 2.5rem !important;
+}
+.ml-3 {
+	margin-left: 5rem;
+}
+.mr-2 {
+	margin-right: 2.5rem !important;
+}
+.bordered {
+	border: 1px solid black;
+}
+.btn {
+	border-radius: 4px;
+	border: none;
+	padding: 10px 27px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.btn-primary {
+	background-color: rgb(0, 123, 255);
+	color: white;
+}
+.btn-success {
+	background-color: rgb(40, 167, 69);
+	color: white;
+}
+.d-flex {
+	display: flex;
+}
+.d-relative {
+	position: relative;
+}
+.justify-content-between {
+	justify-content: space-between;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.form-group {
+	font-size: 1.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+.form-control {
+	border: 1px solid rgb(206, 212, 218);
+	height: 2.5rem;
+	display: block;
+	width: 100%;
+	border-radius: 4px;
+	margin-top: 0.7rem;
+	padding-top: 0.2rem;
+	padding-right: 1rem;
+	padding-bottom: 0.2rem;
+	padding-left: 1rem;
+	box-sizing: border-box;
+}
+.font-weight-normal {
+	font-weight: normal;
+}
+.shadow {
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+}
+.login-form {
+	border-radius: 4px;
+	width: 700px;
+	padding: 1.5rem;
+	margin: 0 auto;
+}
+.admin-index {
+	border-radius: 4px;
+	width: 1000px;
+	padding: 1.5rem;
+	margin: 0 auto;
+}
+.admin-index-button {
+	width: 300px;
+	padding: 0.7rem;
+}
+body {
+	background-color: rgb(238, 238, 238);
+}
