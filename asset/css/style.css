@@ -20,6 +20,10 @@
 	width: 80%;
 	margin: auto;
 }
+.container-70 {
+	width: 70%;
+	margin: auto;
+}
 .jumbotron {
 	padding: 2rem;
 	position: absolute;
@@ -34,12 +38,54 @@
 .text-center {
 	text-align: center;
 }
+.text-left {
+	text-align: left;
+}
+.align-middle {
+	vertical-align: middle;
+}
+.table {
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #212529;
+}
+textarea {
+	height: 10rem !important;
+}
+thead tr {
+	vertical-align: middle;
+	height: 2.5rem;
+}
+tbody tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+tr th {
+	padding: 1rem 1.5rem;
+}
+tr td {
+	padding: 1rem 1.5rem;
+	text-align: left;
+}
+.thead-dark {
+	background-color: rgb(33, 37, 41);
+}
+.thead-dark th {
+	color: white;
+}
+table {
+	display: table;
+	border-collapse: separate;
+	box-sizing: border-box;
+	text-indent: initial;
+	border-spacing: 2px;
+	border-color: grey;
+}
 .logo {
 	width: 120px;
 }
 a {
 	text-decoration: none;
-	font-size: 1.5rem !important;
+	font-size: 1rem !important;
 }
 h1 {
 	font-size: 3.5rem;
@@ -74,8 +120,9 @@ hr {
 	width: 287.986px;
 	border: 1px solid rgba(0, 0, 0, 0.125);
 	box-sizing: border-box;
-	border-radius: 4px;
+	border-radius: 8px;
 	padding: 0 !important;
+	background-color: white;
 }
 .card img {
 	width: 100%;
@@ -102,10 +149,10 @@ hr {
 	padding-bottom: 1rem;
 }
 .mt-1 {
-	margin-top: 1rem;
+	margin-top: 1rem !important;
 }
 .mt-2 {
-	margin-top: 2.5rem;
+	margin-top: 2.5rem !important;
 }
 .mt-3 {
 	margin-top: 5rem !important;
@@ -113,17 +160,34 @@ hr {
 .mt-4 {
 	margin-top: 6rem !important;
 }
+.mb-4 {
+	margin-bottom: 6rem !important;
+}
+.mb-2 {
+	margin-bottom: 2.5rem !important;
+}
 .ml-2 {
 	margin-left: 2.5rem !important;
 }
 .ml-3 {
 	margin-left: 5rem;
 }
+.mr-05 {
+	margin-right: 0.5rem !important;
+}
+.mr-1 {
+	margin-right: 1rem !important;
+}
 .mr-2 {
 	margin-right: 2.5rem !important;
 }
 .bordered {
 	border: 1px solid black;
+}
+.disabled {
+	pointer-events: none;
+	cursor: default;
+	opacity: 0.5;
 }
 .btn {
 	border-radius: 4px;
@@ -136,6 +200,9 @@ hr {
 	margin: 4px 2px;
 	cursor: pointer;
 }
+.btn-sm {
+	padding: 6px 18px;
+}
 .btn-primary {
 	background-color: rgb(0, 123, 255);
 	color: white;
@@ -144,8 +211,23 @@ hr {
 	background-color: rgb(40, 167, 69);
 	color: white;
 }
+.btn-danger {
+	background-color: rgb(220, 53, 69);
+	color: white;
+}
+.btn-warning {
+	background-color: rgb(255, 193, 7);
+	color: rgb(33, 37, 41);
+}
+.btn-info {
+	background-color: rgb(23, 162, 184);
+	color: white;
+}
 .d-flex {
 	display: flex;
+}
+.d-block {
+	display: block;
 }
 .d-relative {
 	position: relative;
@@ -153,8 +235,14 @@ hr {
 .justify-content-between {
 	justify-content: space-between;
 }
+.justify-content-end {
+	justify-content: flex-end;
+}
 .flex-wrap {
 	flex-wrap: wrap;
+}
+.readonly {
+	background-color: #e9ecef !important;
 }
 .form-group {
 	font-size: 1.5rem;
@@ -174,12 +262,20 @@ hr {
 	padding-left: 1rem;
 	box-sizing: border-box;
 }
+.form-control-file {
+	display: block;
+	margin-top: 1.5rem;
+}
 .font-weight-normal {
 	font-weight: normal;
 }
 .shadow {
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
 }
+.row {
+	width: 100%;
+}
+
 .login-form {
 	border-radius: 4px;
 	width: 700px;
