@@ -18,7 +18,7 @@ $product = query("SELECT * FROM produk");
 					<p><?= $p['deskripsi']; ?></p>
 					<hr>
 					<div class="text-center">
-						<a href="booking.php?produk_id=<?= $p['produk_id']; ?>" class="btn btn-primary">Booking</a>
+						<a href="booking.php?produk_id=<?= $p['produk_id']; ?>&nama_produk=<?= $p['nama_produk']; ?>" class="btn btn-primary">Booking</a>
 					</div>
 				</div>
 			</div>
