@@ -5,6 +5,7 @@
 	<hr>
 	<div class="text-left mt-2">
 		<form action="" method="POST">
+			<input type="hidden" name="produk_id" value="<?= $_GET['produk_id']; ?>">
 			<div class="form-group">
 				<label for="order_id">Order ID</label>
 				<input type="text" class="form-control readonly" value="1234" name="order_id" readonly>
