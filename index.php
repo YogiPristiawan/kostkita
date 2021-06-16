@@ -1,5 +1,9 @@
 <?php
 require_once('_functions.php');
+session_start();
+if (isset($_SESSION['user'])) {
+	return header('Location: admin_index.php');
+}
 $title = 'Home';
 $product = query("SELECT * FROM produk");
 

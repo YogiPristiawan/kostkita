@@ -1,5 +1,10 @@
 <?php
 require_once('../connection.php');
+session_start();
+if (!isset($_SESSION['user'])) {
+	return header('Location: ../login.php');
+}
+
 $title = 'Tambah Produk';
 
 if (isset($_POST['submit'])) {

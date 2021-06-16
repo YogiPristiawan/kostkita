@@ -15,7 +15,13 @@
 
 <body>
 	<div class="navbar">
-		<div class="container">
-			<a href="index.php">HOME</a>
+		<div class="container d-relative">
+			<a href="http://localhost/kostkita/admin_index.php">HOME</a>
+			<div class="d-absolute navbar-item">
+				<a href="http://localhost/kostkita/produk/index.php" class="link mr-2">Produk</a>
+				<a href="http://localhost/kostkita/booking/index.php" class="link mr-2">Booking</a>
+				<a href="http://localhost/kostkita/payments/index.php" class="link mr-2">Payment</a>
+				<a href="http://localhost/kostkita/logout.php" class="link">LOGOUT</a>
+			</div>
 		</div>
 	</div>

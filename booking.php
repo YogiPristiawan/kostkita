@@ -1,7 +1,13 @@
 <?php
 require_once('connection.php');
 require('_functions.php');
+session_start();
+if (isset($_SESSION['user'])) {
+	return header('Location: admin_index.php');
+}
+
 $title = 'Booking';
+
 if (cek_booking($_GET['produk_id'])) {
 	return header('Location: index.php');
 }

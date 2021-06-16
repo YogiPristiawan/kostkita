@@ -1,6 +1,11 @@
 <?php
 require_once('../connection.php');
 require_once('../_functions.php');
+session_start();
+if (!isset($_SESSION['user'])) {
+	return header('Location: ../login.php');
+}
+
 $title = 'Daftar Booking';
 
 $booking = query("SELECT * FROM booking INNER JOIN produk ON produk.produk_id = booking.produk_id");

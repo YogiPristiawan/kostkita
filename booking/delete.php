@@ -1,5 +1,10 @@
 <?php
 require_once('../connection.php');
+session_start();
+if (!isset($_SESSION['user'])) {
+	return header('Location: ../login.php');
+}
+
 $booking_id = $_GET['booking_id'];
 $produk_id = $_GET['produk_id'];
 
