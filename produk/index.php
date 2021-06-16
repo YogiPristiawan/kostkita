@@ -45,7 +45,7 @@ $product = query("SELECT * FROM produk");
 						<?php endif; ?>
 					</td>
 					<td class="d-flex flex-between">
-						<a href="edit.php" class="btn btn-sm btn-warning mr-1">Edit</a>
+						<a href="edit.php?produk_id=<?= $p['produk_id']; ?>" class="btn btn-sm btn-warning mr-1">Edit</a>
 						<a href="edit.php" class="btn btn-sm btn-info mr-1">Detail</a>
 						<a href="edit.php" class="btn btn-sm btn-danger">Hapus</a>
 					</td>
