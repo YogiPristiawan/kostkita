@@ -1,5 +1,6 @@
 <?php
 require_once('../connection.php');
+$title = 'Tambah Produk';
 
 if (isset($_POST['submit'])) {
 	$target_dir = '../asset/img/produk/';

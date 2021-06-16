@@ -1,5 +1,7 @@
 <?php
 require_once('../connection.php');
+$title = 'Detail Payment';
+
 $invoice = $_GET['invoice'];
 $query = mysqli_query($conn, "SELECT * FROM payment WHERE invoice = '$invoice'");
 $payment = mysqli_fetch_assoc($query);

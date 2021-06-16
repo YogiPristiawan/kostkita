@@ -1,5 +1,7 @@
 <?php
 require_once('../connection.php');
+$title = 'Edit Produk';
+
 $produk_id = $_GET['produk_id'];
 $query = mysqli_query($conn, "SELECT * FROM produk WHERE produk_id = $produk_id");
 $product = mysqli_fetch_assoc($query);

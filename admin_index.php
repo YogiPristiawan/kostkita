@@ -1,6 +1,7 @@
 <?php
 require_once('connection.php');
 session_start();
+$title = 'Halaman Admin';
 
 if (!isset($_SESSION['user'])) {
 	return header('Location: index.php');

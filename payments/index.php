@@ -1,6 +1,7 @@
 <?php
 require_once('../connection.php');
 require_once('../_functions.php');
+$title = 'Daftar Payment';
 
 $payment = query("SELECT * FROM payment")
 ?>

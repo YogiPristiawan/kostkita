@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="http://localhost/kostkita/asset/css/style.css">
 
-	<title>Admin</title>
+	<title><?= $title; ?></title>
 </head>
 
 <body>

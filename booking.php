@@ -1,7 +1,7 @@
 <?php
 require_once('connection.php');
 require('_functions.php');
-
+$title = 'Booking';
 if (cek_booking($_GET['produk_id'])) {
 	return header('Location: index.php');
 }

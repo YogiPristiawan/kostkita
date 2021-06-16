@@ -11,7 +11,7 @@ require_once('connection.php');
 	<link rel="stylesheet" href="http://localhost/kostkita/asset/css/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
-	<title>Home</title>
+	<title><?= $title; ?></title>
 </head>
 
 <body>
@@ -20,8 +20,10 @@ require_once('connection.php');
 		<div class="jumbotron">
 			<div class="container">
 				<div class="d-flex justify-content-between">
-					<img class="logo" src="./asset/img/logo.png" alt="">
-					<a href="login.php" class="text-white">Login</a>
+					<img class="logo" src="./asset/img/KostKita.png" alt="" width="100px">
+					<div style="line-height: 80px">
+						<a href="login.php" class="text-white">Login</a>
+					</div>
 				</div>
 				<div class="container text-center">
 					<h1 class="text-white">welcome!</h1>

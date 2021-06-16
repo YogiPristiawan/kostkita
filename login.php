@@ -1,6 +1,6 @@
 <?php
 require_once('connection.php');
-
+$title = 'Login';
 if (isset($_POST['submit'])) {
 	session_start();
 

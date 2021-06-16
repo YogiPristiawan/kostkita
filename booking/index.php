@@ -1,6 +1,7 @@
 <?php
 require_once('../connection.php');
 require_once('../_functions.php');
+$title = 'Daftar Booking';
 
 $booking = query("SELECT * FROM booking INNER JOIN produk ON produk.produk_id = booking.produk_id");
 

@@ -1,9 +1,10 @@
 <?php
 require_once('_functions.php');
-
+$title = 'Home';
 $product = query("SELECT * FROM produk");
 
 ?>
+
 <?php require_once('./layouts/header.php') ?>
 <div class="container mt-2 mb-4">
 	<div class="d-flex flex-wrap">

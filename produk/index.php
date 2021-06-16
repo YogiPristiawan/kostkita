@@ -1,6 +1,7 @@
 <?php
 require_once('../_functions.php');
 session_start();
+$title = 'Daftar Produk';
 
 if (!isset($_SESSION['user'])) {
 	return header('Location: index.php');
