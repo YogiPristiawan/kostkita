@@ -7,11 +7,15 @@ function query($sql)
 	global $conn;
 
 	$query = mysqli_query($conn, $sql);
-	while ($row = mysqli_fetch_assoc($query)) {
-		$results[] = $row;
+	if ($query->num_rows) {
+		while ($row = mysqli_fetch_assoc($query)) {
+			$results[] = $row;
+		}
+
+		return $results;
 	}
 
-	return $results;
+	return [];
 }
 
 function cek_booking($produk_id)

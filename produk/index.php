@@ -29,28 +29,30 @@ $product = query("SELECT * FROM produk");
 			</tr>
 		</thead>
 		<tbody>
-			<?php foreach ($product as $p) : ?>
-				<tr>
-					<td><?= $p['nama_produk']; ?></td>
-					<td>Rp. <?= number_format($p['harga'], 0, ',', '.'); ?></td>
-					<td><?= $p['deskripsi']; ?></td>
-					<td>
-						<img src="../asset/img/produk/<?= $p['gambar']; ?>" alt="" width="100px">
-					</td>
-					<td>
-						<?php if ($p['status'] == '1') : ?>
-							<h6 class="text-danger">Dipesan</h6>
-						<?php else : ?>
-							<h6 class="text-success">Kosong</h6>
-						<?php endif; ?>
-					</td>
-					<td class="d-flex flex-between">
-						<a href="edit.php?produk_id=<?= $p['produk_id']; ?>" class="btn btn-sm btn-warning mr-1">Edit</a>
-						<a href="detail.php?produk_id=<?= $p['produk_id']; ?>" class="btn btn-sm btn-info mr-1">Detail</a>
-						<a href="delete.php?produk_id=<?= $p['produk_id']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus?');">Hapus</a>
-					</td>
-				</tr>
-			<?php endforeach; ?>
+			<?php if (!empty($product)) : ?>
+				<?php foreach ($product as $p) : ?>
+					<tr>
+						<td><?= $p['nama_produk']; ?></td>
+						<td>Rp. <?= number_format($p['harga'], 0, ',', '.'); ?></td>
+						<td><?= $p['deskripsi']; ?></td>
+						<td>
+							<img src="../asset/img/produk/<?= $p['gambar']; ?>" alt="" width="100px">
+						</td>
+						<td>
+							<?php if ($p['status'] == '1') : ?>
+								<h6 class="text-danger">Dipesan</h6>
+							<?php else : ?>
+								<h6 class="text-success">Kosong</h6>
+							<?php endif; ?>
+						</td>
+						<td class="d-flex flex-between">
+							<a href="edit.php?produk_id=<?= $p['produk_id']; ?>" class="btn btn-sm btn-warning mr-1">Edit</a>
+							<a href="detail.php?produk_id=<?= $p['produk_id']; ?>" class="btn btn-sm btn-info mr-1">Detail</a>
+							<a href="delete.php?produk_id=<?= $p['produk_id']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus?');">Hapus</a>
+						</td>
+					</tr>
+				<?php endforeach; ?>
+			<?php endif; ?>
 		</tbody>
 	</table>
 

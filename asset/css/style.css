@@ -87,6 +87,13 @@ a {
 	text-decoration: none;
 	font-size: 1rem !important;
 }
+.link {
+	color: #007bff !important;
+}
+.link:hover {
+	color: #0056b3 !important;
+	text-decoration: underline !important;
+}
 h1 {
 	font-size: 3.5rem;
 }
@@ -103,6 +110,10 @@ hr {
 	border: 0.2px solid rgba(0, 0, 0, 0.125);
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
+}
+.img {
+	width: 100%;
+	max-width: 1600px;
 }
 .bg-white {
 	background-color: white;

@@ -13,7 +13,7 @@ if (!isset($_SESSION['user'])) {
 	<hr>
 	<div class="d-flex justify-content-between">
 		<a href="produk/index.php" class="ml-2 mr-2 admin-index-button btn btn-primary">Produk</a>
-		<a href="" class="ml-2 mr-2 admin-index-button btn btn-primary">Booking</a>
+		<a href="booking/index.php" class="ml-2 mr-2 admin-index-button btn btn-primary">Booking</a>
 		<a href="" class="ml-2 mr-2 admin-index-button btn btn-primary">Payment</a>
 	</div>
 </div>
