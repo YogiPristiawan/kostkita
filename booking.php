@@ -24,21 +24,24 @@ if (isset($_POST['submit'])) {
 				mysqli_begin_transaction($conn);
 				try {
 
-					//insert data booking ke table booking
-					mysqli_query($conn, "INSERT INTO booking (booking_at, produk_id, pay_invoice) VALUES ('$tanggal', '$produk_id', '$invoice')");
-
 					//insert data pemesan ke table payment
 					mysqli_query(
 						$conn,
 						"INSERT INTO payment (invoice, tanggal, nama_produk, nama_pemesan, alamat, no_telp, jumlah, bukti_tf) VALUES ('$invoice', '$tanggal', '$nama_produk', '$nama_pemesan', '$alamat', '$no_telp', '$jumlah', '$bukti_tf')"
 					);
 
+					//insert data booking ke table booking
+					mysqli_query($conn, "INSERT INTO booking (booking_at, produk_id, pay_invoice) VALUES ('$tanggal', '$produk_id', '$invoice')");
+
 					//update tabel produk ubah status jadi booked
 					mysqli_query($conn, "UPDATE produk SET status = '1' WHERE produk_id = '$produk_id'");
 
 					mysqli_commit($conn);
+
+					return header('Location: index.php');
 				} catch (mysqli_sql_exception $error) {
 					mysqli_rollback($conn);
+					throw $error;
 				}
 			}
 		}
