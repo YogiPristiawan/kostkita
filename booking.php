@@ -1,5 +1,11 @@
 <?php
 require_once('connection.php');
+require('_functions.php');
+
+if (cek_booking($_GET['produk_id'])) {
+	return header('Location: index.php');
+}
+
 if (isset($_POST['submit'])) {
 	$target_dir = 'asset/img/payments/';
 	$target_file = $target_dir . $_FILES['bukti_tf']['name'];

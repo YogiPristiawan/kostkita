@@ -1,4 +1,11 @@
-<?php require_once('connection.php') ?>
+<?php
+require_once('connection.php');
+session_start();
+
+if (!isset($_SESSION['user'])) {
+	return header('Location: index.php');
+}
+?>
 
 <?php require_once('layouts/admin/header.php') ?>
 <div class="mt-3 bg-white admin-index text-center">

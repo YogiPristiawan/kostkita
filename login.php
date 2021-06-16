@@ -1,3 +1,24 @@
+<?php
+require_once('connection.php');
+
+if (isset($_POST['submit'])) {
+	session_start();
+
+	$email = $_POST['email'];
+	$password = $_POST['password'];
+
+	$query = mysqli_query($conn, "SELECT * FROM users WHERE email = '$email'");
+	$user = mysqli_fetch_assoc($query);
+
+	if ($user) {
+		if (password_verify($password, $user['password'])) {
+			$_SESSION['user'] = $user;
+			return header('Location: admin_index.php');
+		}
+	}
+}
+?>
+
 <?php require_once('connection.php') ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,19 +42,17 @@
 		</div>
 	</div>
 	<div class="mt-3 bg-white login-form">
-		<form action="">
+		<form action="" method="POST">
 			<div class="form-group">
 				<label for="email">Email</label>
-				<input type="text" id="email" name="email" class="form-control">
+				<input type="text" id="email" name="email" class="form-control" required>
 			</div>
 			<div class="form-group">
 				<label for="password">Password</label>
-				<input type="password" id="password" name="password" class="form-control">
+				<input type="password" id="password" name="password" class="form-control" required>
 			</div>
 			<div class="form-group">
-				<button type="submit" class="btn btn-primary">
-					Login
-				</button>
+				<button type="submit" name="submit" class="btn btn-primary">Login</button>
 			</div>
 		</form>
 	</div>
