@@ -11,7 +11,7 @@ $payment = mysqli_fetch_assoc($query);
 	<hr class="mt-3">
 	<table class="table table-no-bg mb-2">
 		<tr>
-			<th class="text-left" width="3rem">Invoice</th>
+			<th class="text-left" width="150px">Invoice</th>
 			<td width="2rem">:</td>
 			<td><?= $payment['invoice']; ?></td>
 		</tr>
