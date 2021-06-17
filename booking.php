@@ -73,7 +73,7 @@ if (isset($_POST['submit'])) {
 			<input type="hidden" name="nama_produk" value="<?= $_GET['nama_produk']; ?>" required>
 			<div class="form-group">
 				<label for="invoice">Invoice</label>
-				<input type="text" class="form-control readonly" value="<?= md5(mktime() . $_GET['produk_id']); ?>" name="invoice" readonly>
+				<input type="text" class="form-control readonly" value="<?= "order_" . date('YmdHis') . $_GET['produk_id']; ?>" name="invoice" readonly>
 			</div>
 
 			<div class="form-group">
